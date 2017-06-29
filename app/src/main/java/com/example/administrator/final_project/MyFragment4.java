@@ -27,7 +27,7 @@ import android.widget.Toast;
 public class MyFragment4 extends Fragment {
     TextView textView_sout ;
     TextView textView_cental ;
-    TextView textView_west ;
+    TextView textView_east ;
     TextView textView_nort ;
     View myFragmentView4;
 
@@ -46,38 +46,45 @@ public class MyFragment4 extends Fragment {
         // Bindwidget
         textView_nort = (TextView) myFragmentView4.findViewById(R.id.nort);
         textView_cental = (TextView) myFragmentView4.findViewById(R.id.cental);
-        textView_west = (TextView) myFragmentView4.findViewById(R.id.west);
+        textView_east = (TextView) myFragmentView4.findViewById(R.id.west);
         textView_sout = (TextView) myFragmentView4.findViewById(R.id.sout);
         //TextView_EventClickIntent
-        textView_sout.setOnClickListener(new View.OnClickListener() {
+        textView_nort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //add comment
-                Intent soutIntent = new Intent(getContext(),Zone1.class);
-                startActivity(soutIntent);
-            }
-        });
-        textView_west.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent westIntent = new Intent(getContext(),Zone1.class);
-                startActivity(westIntent);
+                Intent nortIntent = new Intent(getContext(),Zone1.class);
+                nortIntent.putExtra("name","ภาคเหนือ");
+                startActivity(nortIntent);
             }
         });
         textView_cental.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent centalIntent = new Intent(getContext(),Zone1.class);
+                centalIntent.putExtra("name","ภาคกลาง");
                 startActivity(centalIntent);
             }
         });
-        textView_nort.setOnClickListener(new View.OnClickListener() {
+        textView_east.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nortIntent = new Intent(getContext(),Zone1.class);
-                startActivity(nortIntent);
+                Intent westIntent = new Intent(getContext(),Zone1.class);
+                westIntent.putExtra("name","ภาคตะวันออกเฉียงเหนือ");
+                startActivity(westIntent);
             }
         });
+        textView_sout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //add comment
+                Intent soutIntent = new Intent(getContext(),Zone1.class);
+                soutIntent.putExtra("name","ภาคใต้");
+                startActivity(soutIntent);
+            }
+        });
+
+
+
 
         return myFragmentView4;
     }
