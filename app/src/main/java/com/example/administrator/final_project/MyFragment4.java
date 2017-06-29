@@ -56,7 +56,7 @@ public class MyFragment4 extends Fragment {
                 nortIntent.putExtra("name","ภาคเหนือ");
                 startActivity(nortIntent);
             }
-        });
+        });//kglhlhkl
         textView_cental.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
