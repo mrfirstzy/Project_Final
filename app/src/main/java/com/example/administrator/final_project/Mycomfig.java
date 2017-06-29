@@ -5,7 +5,7 @@ package com.example.administrator.final_project;
  */
 
 public class Mycomfig {
-    private String url_list_project = "http://192.168.10.19/service/fetch.php?";
+    private String url_list_project = "http://172.19.169.240/service/fetch.php?";
 
     public String getUrl_list_project() {
         return url_list_project;

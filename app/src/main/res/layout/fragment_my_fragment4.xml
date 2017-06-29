@@ -1,15 +1,51 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.administrator.final_project.MyFragment4">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/frag4" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="ภาคเหนือ"
+            android:clickable="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/cental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="ภาคกลาง"
+            android:clickable="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/west"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="ภาคตะวันออกเฉียงเหนือ"
+            android:clickable="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/sout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:text="ภาคใต้"
+            android:textSize="24sp" />
+    </LinearLayout>
 
 </FrameLayout>

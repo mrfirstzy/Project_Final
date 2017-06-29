@@ -12,8 +12,8 @@
     <string name="frag3">Frag 3</string>
     <string name="frag4">Frag 4</string>
     <string name="frag5">Frag 5</string>
-    <string name="title_activity_map">Map</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_section3">789</string>
 
     <string-array name="names">
         <item>Home</item>
