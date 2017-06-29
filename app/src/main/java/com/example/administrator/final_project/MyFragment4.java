@@ -52,6 +52,7 @@ public class MyFragment4 extends Fragment {
         textView_sout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //add comment
                 Intent soutIntent = new Intent(getContext(),Zone1.class);
                 startActivity(soutIntent);
             }
