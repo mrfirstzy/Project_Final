@@ -36,11 +36,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         navList = (ListView) findViewById(R.id.navList);
         ArrayList<String> navArray = new ArrayList<String>();
         navArray.add("หน้าหลัก");
-        navArray.add("จังหวัด");
-        navArray.add("สถานที่แนะนำ");
         navArray.add("พิกัด/แผนที่");
         navArray.add("ค้นหา");
-        navArray.add("ข่าวสาร");
+        navArray.add("สถานที่แนะนำ");
         navList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1, navArray);
         navList.setAdapter(adapter);
@@ -67,21 +65,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 fragmentTransaction.commit();
                 break;
 
+//            case 1:
+//                MyFragment1 myFragment1 = new MyFragment1();
+//                fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.fragmentholder,myFragment1);
+//                fragmentTransaction.commit();
+//                break;
+//
+//            case 2:
+//                MyFragment2 myFragment2 = new MyFragment2();
+//                fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.fragmentholder,myFragment2);
+//                fragmentTransaction.commit();
+//                break;
+
             case 1:
-                MyFragment1 myFragment1 = new MyFragment1();
-                fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,myFragment1);
-                fragmentTransaction.commit();
-                break;
-
-            case 2:
-                MyFragment2 myFragment2 = new MyFragment2();
-                fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentholder,myFragment2);
-                fragmentTransaction.commit();
-                break;
-
-            case 3:
 
                 MyFragment3 myFragment3 = new MyFragment3();
                 fragmentTransaction = fragmentManager.beginTransaction();
@@ -89,14 +87,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 fragmentTransaction.commit();
                 break;
 
-            case 4:
+            case 2:
                 MyFragment4 myFragment4 = new MyFragment4();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentholder,myFragment4);
                 fragmentTransaction.commit();
                 break;
 
-            case 5:
+            case 3:
                 MyFragment5 myFragment5 = new MyFragment5();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentholder,myFragment5);

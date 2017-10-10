@@ -25,10 +25,11 @@ import android.widget.Toast;
  * A simple {@link Fragment} subclass.
  */
 public class MyFragment4 extends Fragment {
-    TextView textView_sout ;
-    TextView textView_cental ;
-    TextView textView_east ;
-    TextView textView_nort ;
+    TextView textView_forest ;
+    TextView textView_water ;
+    TextView textView_agriculture ;
+    TextView textView_learning ;
+    TextView textView_travel ;
     View myFragmentView4;
 
     public MyFragment4() {
@@ -38,51 +39,63 @@ public class MyFragment4 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragmen
         myFragmentView4 = inflater.inflate(R.layout.fragment_my_fragment4, container, false);
 
         // Bindwidget
-        textView_nort = (TextView) myFragmentView4.findViewById(R.id.nort);
-        textView_cental = (TextView) myFragmentView4.findViewById(R.id.cental);
-        textView_east = (TextView) myFragmentView4.findViewById(R.id.west);
-        textView_sout = (TextView) myFragmentView4.findViewById(R.id.sout);
+        textView_forest = (TextView) myFragmentView4.findViewById(R.id.forest);
+        textView_water = (TextView) myFragmentView4.findViewById(R.id.water);
+        textView_agriculture = (TextView) myFragmentView4.findViewById(R.id.agriculture);
+        textView_learning = (TextView) myFragmentView4.findViewById(R.id.learning);
+        textView_travel = (TextView) myFragmentView4.findViewById(R.id.travel);
         //TextView_EventClickIntent
-        textView_nort.setOnClickListener(new View.OnClickListener() {
+        textView_forest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nortIntent = new Intent(getContext(),Zone1.class);
-                nortIntent.putExtra("name","ภาคเหนือ");
-                startActivity(nortIntent);
+//                Intent forestIntent = new Intent(getContext(),Zone1.class);
+//                forestIntent.putExtra("name","ป่าไม้");
+//                startActivity(forestIntent);
+                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
             }
-        });//kglhlhkl
-        textView_cental.setOnClickListener(new View.OnClickListener() {
+        });//
+        textView_water.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent centalIntent = new Intent(getContext(),Zone1.class);
-                centalIntent.putExtra("name","ภาคกลาง");
-                startActivity(centalIntent);
-            }
-        });
-        textView_east.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent westIntent = new Intent(getContext(),Zone1.class);
-                westIntent.putExtra("name","ภาคตะวันออกเฉียงเหนือ");
-                startActivity(westIntent);
+//                Intent waterIntent = new Intent(getContext(),Zone1.class);
+//                waterIntent.putExtra("name","แหล่งน้ำ");
+//                startActivity(waterIntent);
+                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
             }
         });
-        textView_sout.setOnClickListener(new View.OnClickListener() {
+        textView_agriculture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //add comment
-                Intent soutIntent = new Intent(getContext(),Zone1.class);
-                soutIntent.putExtra("name","ภาคใต้");
-                startActivity(soutIntent);
+//                Intent agricultureIntent = new Intent(getContext(),Zone1.class);
+//                agricultureIntent.putExtra("name","เกษตรกรรม");
+//                startActivity(agricultureIntent);
+                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
             }
         });
-
+        textView_learning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent learningIntent = new Intent(getContext(),Zone1.class);
+//                learningIntent.putExtra("name","ศูนย์การเรียนรู้");
+//                startActivity(learningIntent);
+                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+            }
+        });
+        textView_travel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent travelIntent = new Intent(getContext(),Zone1.class);
+//                travelIntent.putExtra("name","แหล่งท่องเที่ยว");
+//                startActivity(travelIntent);
+                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 

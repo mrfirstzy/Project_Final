@@ -8,44 +8,63 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <TextView
-            android:id="@+id/nort"
+            android:id="@+id/agriculture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="ภาคเหนือ"
             android:clickable="true"
+            android:text="เกษตรกรรม"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:text="แหล่งน้ำ"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/forest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:text="ป่าไม้"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/cental"
-            android:layout_width="match_parent"
+            android:id="@+id/learning"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="ภาคกลาง"
             android:clickable="true"
+            android:text="ศูนย์การเรียนรู้"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/west"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="ภาคตะวันออกเฉียงเหนือ"
-            android:clickable="true"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/sout"
+            android:id="@+id/travel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:clickable="true"
-            android:text="ภาคใต้"
+            android:text="แหล่งท่องเที่ยว"
             android:textSize="24sp" />
     </LinearLayout>
+
+
+
+
+
+
+
 
 </FrameLayout>
