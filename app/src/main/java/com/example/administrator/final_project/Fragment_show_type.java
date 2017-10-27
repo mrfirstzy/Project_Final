@@ -3,6 +3,7 @@ package com.example.administrator.final_project;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -24,7 +25,7 @@ import android.widget.Toast;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MyFragment4 extends Fragment {
+public class Fragment_show_type extends Fragment {
     TextView textView_forest ;
     TextView textView_water ;
     TextView textView_agriculture ;
@@ -32,7 +33,7 @@ public class MyFragment4 extends Fragment {
     TextView textView_travel ;
     View myFragmentView4;
 
-    public MyFragment4() {
+    public Fragment_show_type() {
 
         // Required empty public constructor
 
@@ -57,7 +58,8 @@ public class MyFragment4 extends Fragment {
 //                Intent forestIntent = new Intent(getContext(),Zone1.class);
 //                forestIntent.putExtra("name","ป่าไม้");
 //                startActivity(forestIntent);
-                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+                Toast.makeText(inflater.getContext(), "1", Toast.LENGTH_SHORT).show();
+                intent_page("1","ป่าไม้");
             }
         });//
         textView_water.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +68,8 @@ public class MyFragment4 extends Fragment {
 //                Intent waterIntent = new Intent(getContext(),Zone1.class);
 //                waterIntent.putExtra("name","แหล่งน้ำ");
 //                startActivity(waterIntent);
-                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(inflater.getContext(), "2", Toast.LENGTH_SHORT).show();
+                intent_page("2","แหล่งน้ำ");
             }
         });
         textView_agriculture.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +78,8 @@ public class MyFragment4 extends Fragment {
 //                Intent agricultureIntent = new Intent(getContext(),Zone1.class);
 //                agricultureIntent.putExtra("name","เกษตรกรรม");
 //                startActivity(agricultureIntent);
-                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(inflater.getContext(), "5", Toast.LENGTH_SHORT).show();
+                intent_page("5","เกษตรกรรม");
             }
         });
         textView_learning.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +88,8 @@ public class MyFragment4 extends Fragment {
 //                Intent learningIntent = new Intent(getContext(),Zone1.class);
 //                learningIntent.putExtra("name","ศูนย์การเรียนรู้");
 //                startActivity(learningIntent);
-                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(inflater.getContext(), "6", Toast.LENGTH_SHORT).show();
+                intent_page("6","ศูนย์การเรียนรู้");
             }
         });
         textView_travel.setOnClickListener(new View.OnClickListener() {
@@ -93,13 +98,24 @@ public class MyFragment4 extends Fragment {
 //                Intent travelIntent = new Intent(getContext(),Zone1.class);
 //                travelIntent.putExtra("name","แหล่งท่องเที่ยว");
 //                startActivity(travelIntent);
-                Toast.makeText(inflater.getContext(), "555", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(inflater.getContext(), "9", Toast.LENGTH_SHORT).show();
+                intent_page("9","แหล่งท่องเที่ยว");
             }
         });
 
 
 
+
+
         return myFragmentView4;
+    }
+
+    private void intent_page( String id,String type_name){
+        Intent intent = new Intent(getContext(),list_project_item.class);
+        intent.putExtra("type_id", id);
+        intent.putExtra("type_name",type_name );
+        startActivity(intent);
+
     }
 
 }

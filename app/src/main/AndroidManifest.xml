@@ -37,6 +37,8 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".Zone1" />
+        <activity android:name=".list_project_item" />
+        <activity android:name=".web_detail_project"></activity>
     </application>
 
 </manifest>

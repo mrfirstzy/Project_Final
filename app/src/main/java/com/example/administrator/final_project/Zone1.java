@@ -46,12 +46,6 @@ public class Zone1 extends AppCompatActivity {
 
 
         }
-
-
-
-
-
-
     }
 
 

@@ -1,7 +1,5 @@
 package com.example.administrator.final_project;
 
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -12,7 +10,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -81,14 +78,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
             case 1:
 
-                MyFragment3 myFragment3 = new MyFragment3();
+                MyFragmentMap myFragment3 = new MyFragmentMap();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentholder,myFragment3);
                 fragmentTransaction.commit();
                 break;
 
             case 2:
-                MyFragment4 myFragment4 = new MyFragment4();
+                Fragment_show_type myFragment4 = new Fragment_show_type();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentholder,myFragment4);
                 fragmentTransaction.commit();
